@@ -1,0 +1,218 @@
+/* 
+*, *:before, *:after {
+    box-sizing: border-box;
+    }
+.my-class{
+    font-family: fantasy;
+    font-style: italic;
+    border:brown thick dashed ;
+   
+   
+   
+}
+.my-class > p{
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+    text-shadow: 0.2px 2px 3px;
+    text-indent: 200px;
+   
+}
+.my-class p:hover{
+    color: red;
+}
+.btn{
+    margin-top: 10px;
+}
+.btn:hover{
+    color: red;
+    background-color: sandybrown;
+    
+}
+
+/* .parent {
+    background-color: #af47ff;
+    padding: 30px;
+    width: 300px;
+    position: fixed;
+    
+    }
+    .child {
+    background-color: #ff4797;
+    padding: 30px;
+
+    
+    }
+    .box {
+    background-color: #f3ff47;
+    padding: 30px;
+    border: 2px solid #333;
+    border-style: dotted;
+    font-family: courier;
+    text-align: center;
+    font-size: 2rem;
+   
+    } */
+    
+    /* .parent {
+        background-color: #af47ff;
+        padding: 30px;
+        width: 500px;
+        }
+    .child {
+        background-color: #ff4797;
+        padding: 30px;
+        }
+
+    .box {
+            background-color: #f3ff47;
+            padding: 30px;
+            border: 2px solid #333;
+            border-style: dotted;
+            font-family: courier;
+            text-align: justify;
+            font-size: 1rem;
+            }    
+
+    img {
+        float: right;
+        padding: 20px 0px 20px 20px;
+    }        
+
+    span {
+        float: right;
+        margin: 20px 0px 20px 20px;
+        padding: 10px;
+        border: 1px solid black
+    }
+    
+    .my-first-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        height: 600px;
+        z-index: 10;
+        }
+    .my-second-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 500px;
+        z-index: 20;
+    }
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); 
+    }
+    .item1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    }
+    .item6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    }      */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3; 
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    header {
+        grid-area: header;
+        background-color: #fed330;
+        padding: 20px;
+        }
+        article {
+        grid-area: content;
+        background-color: #20bf6b;
+        padding: 20px;
+        }
+        aside {
+        grid-area: sidebar;
+        background-color: #45aaf2;
+        }
+        footer {
+        padding: 20px;
+        grid-area: footer;
+        background-color: #fd9644;
+        }
+        .wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+ }
+
+ table, th, td {
+    border: 1px solid #333;
+    border-collapse: collapse
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #af47ff;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    }
+    .circle {
+    border-radius: 50%; 
+    left: calc(50% - 6.25em);
+    top: calc(50% - 12.5em);
+    transform-origin: 50% 12.5em;
+    width: 12.5em;
+    height: 12.5em;
+    position: absolute;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, .5);
+    }
+    .one,
+    .three {
+    background: rgba(142, 92, 205, .75);
+    }
+    .two,
+    .four {
+    background: rgba(236, 252, 100, .75);
+    }
+    .one {
+    transform: rotateZ(0);
+    }
+    .two {
+    transform: rotateZ(90deg);
+    }
+    .three {
+    transform: rotateZ(180deg);
+    }
+    .four {
+    transform: rotateZ(-90deg);
+    }
+
+    @keyframes spin {
+        0% {
+        transform: rotateZ(0);
+        }
+        100% {
+        transform: rotateZ(360deg);
+        }
+        }
+        .container {
+        animation: spin 5s linear infinite;
+        }
